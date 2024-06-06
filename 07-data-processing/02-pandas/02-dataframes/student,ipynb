@@ -1,0 +1,4 @@
+# Data Exploration
+print("First 3 rows of the DataFrame:")
+print(employees.head(3))  # Display first 3 rows
+print()
