@@ -3,4 +3,4 @@
 import re
 
 def only_letters(string):
-    return re.fullmatch('[a-zA-Z]*', string)
+    return re.fullmatch('[a-zA-z]*', string)

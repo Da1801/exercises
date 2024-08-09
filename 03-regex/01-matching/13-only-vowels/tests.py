@@ -15,6 +15,7 @@ import solution
     'x',
     'y',
     'aebou',
+    'A'
 ])
 def test_function(string):
     function_name = 'only_vowels'

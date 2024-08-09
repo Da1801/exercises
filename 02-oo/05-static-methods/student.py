@@ -20,7 +20,7 @@ class Duration:
     
     @property
     def minutes(self):
-        return self.__duration_in_seconds / 60
+        return self.__duration_in_sec / 60
     
     @property
     def hours(self):

@@ -16,6 +16,7 @@ import solution
     'abc.def@gmail.com',
     'abc.def ucll.be',
     '....@ucll.be',
+    "dhruv_ab@student_ucll.be"
 ])
 def test_function(string):
     function_name = 'is_valid_email_address'

@@ -9,38 +9,36 @@ class Time:
     def hours(self):
         return self.__hours
     
-    @hours.setter
-    def hours(self,other):
-        if 0 <= other <= 23:
-            self.__hours = other
-
-        else:
-            raise ValueError("Invalid Values for hours!!")
-        
     @property
     def minutes(self):
         return self.__minutes
     
-    @minutes.setter
-    def minutes(self,other):
-        if 0 <= other <= 59:
-            self.__minutes = other
-
-        else:
-            raise ValueError("Invalid Values for minutes!!")
-
     @property
     def seconds(self):
         return self.__seconds
     
-    @seconds.setter
-    def seconds(self,other):
-        if 0 <= other <= 59:
-            self.__seconds = other
+    @hours.setter
+    def hours(self,value):
+        if 0<= value <= 23:
+            self.__hours = value
+        else:  
+            raise ValueError()
+    
+    @minutes.setter
+    def minutes(self,value):
+        if 0<= value <= 59:
+            self.__minutes = value
 
-        else:
-            raise ValueError("Invalid Values for seconds!!")
+        else:    
+            raise ValueError()
         
+    @seconds.setter
+    def seconds(self,value):
+        if 0<= value <= 59:
+            self.__seconds = value
+
+        else:    
+            raise ValueError()
     
         
     
