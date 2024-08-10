@@ -33,5 +33,7 @@ def alternating_caps(string):
 
 def find_repeated_words(sentence):
     import re
+    c = re.findall("[a-zA-Z]+",sentence)
+    print (c)
     words = [word.lower() for word in re.findall('[a-zA-Z]+', sentence)]
     return {word1 for word1, word2 in zip(words, words[1:]) if word1 == word2}
