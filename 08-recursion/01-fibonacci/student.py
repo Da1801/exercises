@@ -1,9 +1,8 @@
-def fibonacci(x):
-    if x <= 0:
+def fibonacci(number):
+    if number <= 0:
         return 0
-    elif x ==1:
+    
+    elif number == 1:
         return 1
     else:
-        pattern = fibonacci(x-1) + fibonacci(x-2)
-
-    return pattern
+        return fibonacci(number-1)+fibonacci(number-2)

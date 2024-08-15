@@ -1,9 +1,10 @@
 def countX(text):
     if not text:
         return 0
-    first_of_x = 0
-    if text[0]== "x":
-        first_of_x += 1
     
+    count = 0
 
-    return first_of_x + countX(text[1:])
+    if text[0] == "x":
+        count += 1
+
+    return count + countX(text[1:])

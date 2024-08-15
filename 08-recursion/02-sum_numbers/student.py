@@ -1,7 +1,8 @@
-def sum_numbers(n):
-    n = abs(n)
-    if n < 10:
-        return n
-        
-    sum = (n % 10) + sum_numbers(n//10)
-    return (n % 10) + sum_numbers(n//10)
+def sum_numbers(number):
+    if number <0:
+        number *= -1
+
+    if number <10:
+        return number
+    
+    return number%10 + sum_numbers(number //10)
